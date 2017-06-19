@@ -79,7 +79,7 @@ public class MapsActivityCurrentPlace extends AppCompatActivity
     private String[] mLikelyPlaceAddresses = new String[mMaxEntries];
     private String[] mLikelyPlaceAttributions = new String[mMaxEntries];
     private LatLng[] mLikelyPlaceLatLngs = new LatLng[mMaxEntries];
-    String url = "https://apitest.orange.pl/Localization/v1/GeoLocation?msisdn=48506436958&apikey=qr1d7R3Ag3gop06s1bzRuySh7fxukfSA";
+    String url = "https://apitest.orange.pl/Localization/v1/GeoLocation?msisdn=48515330786&apikey=qr1d7R3Ag3gop06s1bzRuySh7fxukfSA";
     JSONObject json = null;
 
     @Override
@@ -408,13 +408,7 @@ public class MapsActivityCurrentPlace extends AppCompatActivity
             mLastKnownLocation = null;
         }
     }
-    private int getLatitude(JSONObject[] object){
-        return 0;
-    }
-    // this should return longtitude from json
-    private int getLongitude(JSONObject[] object){
-        return 0;
-    }
+
     private JSONObject[] getRequest(String urlStr){
         RequestQueue queue = Volley.newRequestQueue(this);
 
